@@ -63,7 +63,7 @@ export default function Navbar() {
             </div>
           </ul>
         </div>
-        <a className=" text-xl  ml-4 flex justify-center items-center" href="#">
+        <a className=" text-xl  ml-4 flex justify-center items-center" href="#home">
           <div className="mr-3">
             <img className="w-16 rounded-lg" src={logo} />
           </div>

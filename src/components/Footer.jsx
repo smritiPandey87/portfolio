@@ -4,7 +4,7 @@ import logo from "../assets/logo.png"
 export default function Footer() {
   return (
     <div className='mt-32 mb-32'>
-        <a className=" text-xl  ml-4 flex justify-center items-center" href="#">
+        <a className=" text-xl  ml-4 flex justify-center items-center" href="#home">
                   <div className="mr-3">
                     <img className="w-16 rounded-lg" src={logo} />
                   </div>
