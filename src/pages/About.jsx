@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="mt-10 flex flex-col justify-center items-center">
+    <div  id="about" className="mt-10 flex flex-col justify-center items-center">
       <h1 className="text-4xl font-semibold text-cyan-600 mb-5">ABOUT ME</h1>
       <p className="text-center font-serif text-xl font-extralight leading-10 ">
         Hi, I'm Smriti Pandey — a frontend developer

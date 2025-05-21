@@ -9,7 +9,7 @@ import Singlepage from "../assets/singlepic.png";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div id="portfolio">
       <h1 className="text-center text-4xl font-semibold text-cyan-600 mt-32">PORTFOLIO</h1>
       <div className="flex mt-32">
         <Imgcard src={Commerce} />

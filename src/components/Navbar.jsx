@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
-  const [isDark, setIsDark] = useState(false);
-
+  const [isDark, setIsDark] = useState(true);
+            
   
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
@@ -42,6 +42,7 @@ export default function Navbar() {
               />
             </svg>
           </div>
+          
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
@@ -50,13 +51,13 @@ export default function Navbar() {
               <a href="#home">
                 <div>Home</div>
               </a>
-              <a href="#About">
+              <a href="#about">
                 <div>About</div>
               </a>
-              <a>
+              <a href="#portfolio">
                 <div>Portfolio</div>
               </a>
-              <a>
+              <a href="#contact">
                 <div>Contact Me</div>
               </a>
             </div>
@@ -78,16 +79,16 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-center lg:flex gap-24 mr-24">
-        <a>
+        <a href="#home">
           <div>Home</div>
         </a>
-        <a>
+        <a href="#about">
           <div>About</div>
         </a>
-        <a>
+        <a href="#portfolio" >
           <div>Portfolio</div>
         </a>
-        <a>
+        <a href="#contact" >
           <div>Contact Me</div>
         </a>
       </div>
