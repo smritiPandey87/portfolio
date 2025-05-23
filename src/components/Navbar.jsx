@@ -23,7 +23,7 @@ export default function Navbar() {
   }, [isDark]);
 
   return (
-    <div key={isDark ? "dark" : "light"} className="navbar bg-base-100 shadow-sm  fixed z-50">
+    <div key={isDark ? "dark" : "light"} className="  navbar bg-base-100 shadow-sm  fixed z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,9 +45,9 @@ export default function Navbar() {
           
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-fit p-2 shadow flex flex-col gap-x-5"
           >
-            <div className="navbar-center lg:flex gap-24 mr-24">
+            <div className="navbar-center flex lg:flex-row flex-col gap-5 mr-24 ">
               <a href="#home">
                 <div>Home</div>
               </a>
@@ -63,22 +63,22 @@ export default function Navbar() {
             </div>
           </ul>
         </div>
-        <a className=" text-xl  ml-4 flex justify-center items-center" href="#home">
-          <div className="mr-3">
-            <img className="w-16 rounded-lg" src={logo} />
+        <a className=" text-xl  ml-4 flex justify-center items-center  " href="#home">
+          <div className="mr-3 hidden lg:block">
+            <img className="lg:w-16 rounded-lg  " src={logo} />
           </div>
           <div className="flex flex-col justify-start items-start">
          <div>
-            <span className="text-2xl font-serif ">S</span>
-            <span className="text-start text-lg">mriti </span>
+            <span className="lg:text-2xl  text-lg font-serif ">S</span>
+            <span className="text-start lg:text-lg text-sm">mriti </span>
           </div>
-          <span className="text-[12px] font-medium">WEB DEVELOPER </span>
+          <span className="text-[12px] lg:font-medium font-sm">WEB DEVELOPER </span>
           </div>
           
         </a>
       </div>
 
-      <div className="navbar-center lg:flex gap-24 mr-24">
+      <div className="navbar-center lg:flex   gap-24 mr-24 hidden">
         <a href="#home">
           <div>Home</div>
         </a>
@@ -93,7 +93,7 @@ export default function Navbar() {
         </a>
       </div>
 
-      <label className="swap swap-rotate">
+      <label className="swap swap-rotate relative left-32 lg:left-0">
         <input
           type="checkbox"
           checked={isDark}

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Paracard({para,skills}) {
   return (
-    <div className='ml-10 mr-10'>
-        <p className='text-lg font-thin mb-4'>{para}</p>
+    <div className='lg:ml-10 lg:mr-10 ml-5 mr-5'>
+        <p className='lg:text-lg font-thin font-poppins mb-4'>{para}</p>
         <h1 >{skills}</h1>
     </div>
   )
